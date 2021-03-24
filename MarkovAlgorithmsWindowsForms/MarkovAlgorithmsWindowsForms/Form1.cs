@@ -19,7 +19,7 @@ namespace MarkovAlgorithmsWindowsForms
 
             this.ActiveControl = button1;
 
-            richTextBox1.Text = "Поле для вводу алгоритма";
+            richTextBox1.Text = "Поле для вводу алгоритма\nПриклад:\na->b\nb->.b";
             textBox1.Text = "Ведіть початкові дані";
         }
 
@@ -100,7 +100,7 @@ namespace MarkovAlgorithmsWindowsForms
 
         private void richTextBox1_Enter(object sender, EventArgs e)
         {
-            if (richTextBox1.Text == "Поле для вводу алгоритма")
+            if (richTextBox1.Text == "Поле для вводу алгоритма\nПриклад:\na->b\nb->.b")
                 richTextBox1.Text = "";
         }
         private void textBox1_Enter(object sender, EventArgs e)
@@ -111,7 +111,7 @@ namespace MarkovAlgorithmsWindowsForms
         private void richTextBox1_Leave(object sender, EventArgs e)
         {
             if (richTextBox1.Text == "")
-                richTextBox1.Text = "Поле для вводу алгоритма";
+                richTextBox1.Text = "Поле для вводу алгоритма\nПриклад:\na->b\nb->.b";
         }
 
 
